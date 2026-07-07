@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List Price Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shopping List Price Calculator</h1>
+        <!-- Input Section -->
+        <div class="input-box">
+            <!-- Item Name -->
+            <input type="text" id="item" list="productList" placeholder="Enter Item Name" />
+            <!-- Suggestions -->
+            <datalist id="productList"></datalist>
+            <!-- Quantity -->
+            <input type="number" id="qty" placeholder="Quantity" min="1" />
+            <!-- Unit -->
+            <input type="text" id="unit" placeholder="Unit" readonly />
+            <!-- Price -->
+            <input type="number" id="price" placeholder="Price" readonly />
+            <!-- Add Button -->
+            <button onclick="addItem()">Add</button>
+        </div>
+
+        <hr>
+
+        <!-- Output -->
+        <div id="list">
+
+        </div>
+        <br>
+        <!-- Heading -->
+        <div class="table-heading">
+
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+        </div>
+
+
+        <br>
+
+        <!-- Totals -->
+        <h2 id="totalItems">Total Items : 0</h2>
+
+        <h2 id="totalPrice">Total Price : Rs. 0</h2>
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
